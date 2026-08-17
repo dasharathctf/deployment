@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYPHER X // AGGRESSIVE BOT COMMAND MATRIX</title>
+  <meta name="description" content="Ultra-high performance Neon Cyberpunk Control Matrix for XYPHER X Multi-Bot System.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cyberpunk Background Grid & Glows -->
+  <div class="cyber-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-cyan"></div>
+    <div class="glow-orb orb-magenta"></div>
+    <div class="glow-orb orb-purple"></div>
+    <div class="scanlines"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- TOP NAVIGATION & STATUS BAR -->
+    <header class="top-nav">
+      <div class="brand">
+        <div class="brand-glitch" data-text="XYPHER X">XYPHER X</div>
+        <span class="sub-brand">AGGRESSIVE BOT FLEET MATRIX</span>
+      </div>
+
+      <div class="system-pills">
+        <div class="pill pill-green">
+          <span class="pulse-dot green"></span>
+          <span>4/4 BOTS ONLINE</span>
+        </div>
+        <div class="pill pill-cyan">
+          <span class="pulse-dot cyan"></span>
+          <span id="vc-status-pill">VOICE: STANDBY</span>
+        </div>
+        <div class="pill pill-magenta">
+          <span class="pulse-dot magenta"></span>
+          <span id="spam-status-pill">SPAM CANNON: ARMED</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button class="btn btn-neon-outline" id="copy-bot-prefix-btn">
+          <span class="icon">⚡</span> PREFIX: <code>!</code>
+        </button>
+      </div>
+    </header>
+
+    <!-- STATS OVERVIEW CARDS -->
+    <section class="stats-row">
+      <div class="stat-card">
+        <div class="stat-icon">🤖</div>
+        <div class="stat-info">
+          <span class="stat-label">ACTIVE BOTS</span>
+          <span class="stat-value neon-cyan" id="stat-bot-count">4 NODES</span>
+        </div>
+        <div class="stat-mini-chart">100% OPERATIONAL</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">🔊</div>
+        <div class="stat-info">
+          <span class="stat-label">GLOBAL VOLUME</span>
+          <span class="stat-value neon-yellow" id="stat-vol-val">150%</span>
+        </div>
+        <div class="stat-mini-chart">BOOSTED PCM</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">🔁</div>
+        <div class="stat-info">
+          <span class="stat-label">PLAYBACK LOOP</span>
+          <span class="stat-value neon-green">INFINITE (ON)</span>
+        </div>
+        <div class="stat-mini-chart">SEAMLESS OPUS</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">🛡️</div>
+        <div class="stat-info">
+          <span class="stat-label">WHITELISTED USERS</span>
+          <span class="stat-value neon-magenta" id="stat-whitelist-count">2 ACTIVE</span>
+        </div>
+        <div class="stat-mini-chart">RESTRICTED COMMANDS</div>
+      </div>
+    </section>
+
+    <!-- MAIN DASHBOARD GRID -->
+    <main class="dashboard-grid">
+      <!-- LEFT COLUMN: BOT FLEET MATRIX & AUDIO CONTROLS -->
+      <div class="col-main">
+        
+        <!-- BOT FLEET SECTION -->
+        <div class="card neon-border-cyan">
+          <div class="card-header">
+            <h2><span class="header-icon">📡</span> CONNECTED BOT NODES</h2>
+            <span class="badge badge-cyan">4 ACTIVE CLIENTS</span>
+          </div>
+          <div class="bot-matrix-grid">
+            
+            <div class="bot-node-card">
+              <div class="bot-header">
+                <div class="bot-avatar bot-0">0</div>
+                <div class="bot-meta">
+                  <div class="bot-name">CELPHYX<span class="bot-tag">#9956</span></div>
+                  <div class="bot-id">ID: 1522871206712180846</div>
+                </div>
+                <span class="bot-status-badge online">ONLINE</span>
+              </div>
+              <div class="bot-specs">
+                <div class="spec-item"><span>Assigned Track:</span> <b class="spec-track">1.mp3</b></div>
+                <div class="spec-item"><span>Gateway Ping:</span> <b class="spec-ping">18ms</b></div>
+                <div class="spec-item"><span>Encoder:</span> <b>Opus x64</b></div>
+              </div>
+            </div>
+
+            <div class="bot-node-card">
+              <div class="bot-header">
+                <div class="bot-avatar bot-1">1</div>
+                <div class="bot-meta">
+                  <div class="bot-name">XYPHER X<span class="bot-tag">#4260</span></div>
+                  <div class="bot-id">ID: 1509426796100063395</div>
+                </div>
+                <span class="bot-status-badge online">ONLINE</span>
+              </div>
+              <div class="bot-specs">
+                <div class="spec-item"><span>Assigned Track:</span> <b class="spec-track">2.mp3</b></div>
+                <div class="spec-item"><span>Gateway Ping:</span> <b class="spec-ping">22ms</b></div>
+                <div class="spec-item"><span>Encoder:</span> <b>Opus x64</b></div>
+              </div>
+            </div>
+
+            <div class="bot-node-card">
+              <div class="bot-header">
+                <div class="bot-avatar bot-2">2</div>
+                <div class="bot-meta">
+                  <div class="bot-name">XYPHER X<span class="bot-tag">#0640</span></div>
+                  <div class="bot-id">ID: 1509240750632603688</div>
+                </div>
+                <span class="bot-status-badge online">ONLINE</span>
+              </div>
+              <div class="bot-specs">
+                <div class="spec-item"><span>Assigned Track:</span> <b class="spec-track">3.mp3</b></div>
+                <div class="spec-item"><span>Gateway Ping:</span> <b class="spec-ping">19ms</b></div>
+                <div class="spec-item"><span>Encoder:</span> <b>Opus x64</b></div>
+              </div>
+            </div>
+
+            <div class="bot-node-card">
+              <div class="bot-header">
+                <div class="bot-avatar bot-3">3</div>
+                <div class="bot-meta">
+                  <div class="bot-name">XYPHER X<span class="bot-tag">#2991</span></div>
+                  <div class="bot-id">ID: 1509240042563043388</div>
+                </div>
+                <span class="bot-status-badge online">ONLINE</span>
+              </div>
+              <div class="bot-specs">
+                <div class="spec-item"><span>Assigned Track:</span> <b class="spec-track">4.mp3</b></div>
+                <div class="spec-item"><span>Gateway Ping:</span> <b class="spec-ping">25ms</b></div>
+                <div class="spec-item"><span>Encoder:</span> <b>Opus x64</b></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- VOICE LOCK & MULTI-TRACK AUDIO STATION -->
+        <div class="card neon-border-purple">
+          <div class="card-header">
+            <h2><span class="header-icon">🎵</span> VOICE LOCK & AUDIO PLAYBACK STATION</h2>
+            <span class="badge badge-purple">21 TRACKS LOADED</span>
+          </div>
+
+          <div class="control-panel">
+            <!-- Channel Lock Form -->
+            <div class="vc-lock-bar">
+              <div class="input-group">
+                <label for="vc-id-input">TARGET VOICE CHANNEL ID</label>
+                <div class="input-with-button">
+                  <input type="text" id="vc-id-input" placeholder="e.g. 1481261314981494877" value="1481261314981494877">
+                  <button class="btn btn-cyan" id="btn-lock-vc">
+                    <span>⚡ LOCK ALL BOTS (!ja)</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Audio Actions -->
+            <div class="audio-actions-grid">
+              <button class="btn btn-gradient-purple" id="btn-distributed-play">
+                <span class="icon">🔀</span>
+                <div>
+                  <div class="btn-title">MULTI-TRACK DISTRIBUTED PLAY</div>
+                  <div class="btn-sub">Track 1→Bot 0, Track 2→Bot 1, Track 3→Bot 2 (<code>!p</code>)</div>
+                </div>
+              </button>
+
+              <button class="btn btn-red-outline" id="btn-stop-audio">
+                <span class="icon">⏹️</span>
+                <div>
+                  <div class="btn-title">STOP AUDIO</div>
+                  <div class="btn-sub">Keeps bots locked in VC (<code>!s</code>)</div>
+                </div>
+              </button>
+
+              <button class="btn btn-danger" id="btn-disconnect-vc">
+                <span class="icon">🔌</span>
+                <div>
+                  <div class="btn-title">DISCONNECT ALL</div>
+                  <div class="btn-sub">Leaves voice channel (<code>!dc</code>)</div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Track Visualizer & Grid -->
+            <div class="visualizer-container">
+              <div class="visualizer-header">
+                <span id="now-playing-label">CURRENT STREAM: <b>DISTRIBUTED 4-TRACK MULTIPLEX</b></span>
+                <span class="loop-indicator">🔁 INFINITE LOOP ACTIVE</span>
+              </div>
+              <canvas id="audio-visualizer" height="70"></canvas>
+            </div>
+
+            <!-- Track Selector Pills (1 to 21) -->
+            <div class="track-selector-box">
+              <label>QUICK PLAY SPECIFIC TRACK ON ALL BOTS (<code>!1</code> - <code>!21</code>):</label>
+              <div class="track-pills-container" id="track-pills-list">
+                <!-- Javascript will generate 21 track pills -->
+              </div>
+            </div>
+
+            <!-- Volume & State Controls -->
+            <div class="audio-sliders-row">
+              <div class="slider-box">
+                <div class="slider-header">
+                  <span>MASTER VOLUME: <b id="volume-display">150%</b></span>
+                  <span class="cmd-code">!vol 150</span>
+                </div>
+                <input type="range" id="volume-slider" min="50" max="200" step="10" value="150">
+              </div>
+
+              <div class="switch-box">
+                <span class="switch-label">INFINITE REPLAY LOOP</span>
+                <label class="neon-switch">
+                  <input type="checkbox" id="loop-toggle" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: 100x SPAM CANNON & WHITELIST & TERMINAL -->
+      <div class="col-side">
+        
+        <!-- 100x ZERO-DELAY SPAM CANNON -->
+        <div class="card neon-border-magenta">
+          <div class="card-header">
+            <h2><span class="header-icon">💥</span> 100x ZERO-DELAY SPAM CANNON</h2>
+            <span class="badge badge-magenta">16 STREAMS</span>
+          </div>
+          
+          <div class="spam-cannon-body">
+            <div class="input-group">
+              <label for="spam-text-input">SPAM PAYLOAD (AUTO-PREFIXES #)</label>
+              <input type="text" id="spam-text-input" value="XYPHER X ALWAYS ON TOP BABE">
+              <div class="preview-tag">Preview: <code id="spam-preview-text"># XYPHER X ALWAYS ON TOP BABE</code></div>
+            </div>
+
+            <div class="count-selector">
+              <label>MESSAGE COUNT:</label>
+              <div class="count-pills">
+                <button class="count-btn" data-count="50">50</button>
+                <button class="count-btn active" data-count="100">100</button>
+                <button class="count-btn" data-count="250">250</button>
+                <button class="count-btn" data-count="500">500</button>
+                <button class="count-btn" data-count="30s">30s MAX</button>
+              </div>
+            </div>
+
+            <button class="btn btn-fire-spam" id="btn-fire-spam">
+              <span class="fire-icon">🔥</span>
+              <span class="fire-text">UNLEASH 100x SPAM STORM (!spam)</span>
+            </button>
+            <div class="fire-progress" id="spam-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- WHITELISTED USERS MANAGEMENT -->
+        <div class="card neon-border-yellow">
+          <div class="card-header">
+            <h2><span class="header-icon">🛡️</span> WHITELISTED COMMANDERS</h2>
+            <span class="badge badge-yellow" id="whitelist-badge">2 USERS</span>
+          </div>
+
+          <div class="whitelist-body">
+            <p class="whitelist-note">Only whitelisted User IDs can execute bot commands in Discord.</p>
+            
+            <div class="whitelist-list" id="whitelist-items-container">
+              <div class="whitelist-row">
+                <div class="wl-avatar">👑</div>
+                <div class="wl-info">
+                  <div class="wl-id">1480822622429253643</div>
+                  <div class="wl-role">PRIMARY COMMANDER</div>
+                </div>
+                <button class="btn-copy-sm" data-copy="1480822622429253643">COPY</button>
+              </div>
+
+              <div class="whitelist-row">
+                <div class="wl-avatar">⚡</div>
+                <div class="wl-info">
+                  <div class="wl-id">1477645037004259379</div>
+                  <div class="wl-role">SECONDARY COMMANDER</div>
+                </div>
+                <button class="btn-copy-sm" data-copy="1477645037004259379">COPY</button>
+              </div>
+            </div>
+
+            <!-- Add Whitelist Input -->
+            <div class="add-wl-form">
+              <input type="text" id="add-wl-input" placeholder="New Discord User ID">
+              <button class="btn btn-yellow" id="btn-add-wl">
+                <span>+ ADD (!u)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIVE TERMINAL CONSOLE -->
+        <div class="card terminal-card">
+          <div class="card-header">
+            <h2><span class="header-icon">💻</span> LIVE EVENT MATRIX</h2>
+            <button class="btn-clear-term" id="btn-clear-console">CLEAR</button>
+          </div>
+          <div class="terminal-screen" id="terminal-screen">
+            <div class="term-line info">[SYSTEM]: Initializing XYPHER X Matrix v3.0...</div>
+            <div class="term-line success">[OPUS]: libopus-0.x64.dll loaded successfully.</div>
+            <div class="term-line success">[NETWORK]: 4/4 Discord Bot Sessions online.</div>
+            <div class="term-line info">[WHITELIST]: 2 authorized commander IDs loaded.</div>
+            <div class="term-line warning">[VOICE CORE]: Permanent voice lock enabled.</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- DISCORD COMMAND CHEAT SHEET MODAL / FOOTER -->
+    <footer class="footer-commands">
+      <div class="footer-title">⚡ DISCORD COMMAND REFERENCE CHEAT SHEET</div>
+      <div class="cmd-chips-grid">
+        <div class="cmd-chip" data-cmd="!ja 1481261314981494877">
+          <span class="chip-cmd">!ja &lt;id&gt;</span>
+          <span class="chip-desc">Lock all bots in voice channel permanently</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!p">
+          <span class="chip-cmd">!p</span>
+          <span class="chip-desc">Distributed playback (different song per bot)</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!p 3">
+          <span class="chip-cmd">!p &lt;num&gt;</span>
+          <span class="chip-desc">Play specific track (e.g. !p 3 or !3)</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!spam 50 XYPHER ON TOP">
+          <span class="chip-cmd">!spam [count] {text}</span>
+          <span class="chip-desc">100x zero-delay spam storm (auto #)</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!s">
+          <span class="chip-cmd">!s</span>
+          <span class="chip-desc">Stop audio (bots stay in channel)</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!dc">
+          <span class="chip-cmd">!dc</span>
+          <span class="chip-desc">Disconnect all bots from voice</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!vol 150">
+          <span class="chip-cmd">!vol &lt;50-200&gt;</span>
+          <span class="chip-desc">Set master volume</span>
+        </div>
+        <div class="cmd-chip" data-cmd="!u 1480822622429253643">
+          <span class="chip-cmd">!u &lt;id&gt;</span>
+          <span class="chip-desc">Add user ID to whitelist</span>
+        </div>
+      </div>
+      <div class="footer-sub">
+        XYPHER X BOT FLEET // HOSTED ON NETLIFY // ZERO-DELAY STREAMING ENGINE
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
